@@ -1,0 +1,76 @@
+.main-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main-logo {
+  background-color: lightcoral;
+  /* background-image: url("../../assets/logo.png"); */
+  background-size: 250px;
+  width: 200px;
+  height: 200px;
+}
+
+.main-title {
+  margin-top: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .main-logo-wrapper {
+    margin-top: 120px;
+  }
+  .main-logo {
+    width: 120px;
+    height: 120px;
+  }
+  .main-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-logo-wrapper {
+    margin-top: 100px;
+  }
+  .main-logo {
+    width: 160px;
+    height: 160px;
+  }
+  .main-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-logo-wrapper {
+    margin-top: 50px;
+  }
+  .main-logo {
+    width: 180px;
+    height: 180px;
+  }
+  .main-title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-logo-wrapper {
+    margin-top: 40px;
+  }
+  .main-logo {
+    width: 200px;
+    height: 200px;
+  }
+  .main-title {
+    font-size: 3rem;
+  }
+}

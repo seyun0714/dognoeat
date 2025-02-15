@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: lightslategrey;
+}
+
+.footer-wrapper {
+  padding: 5px;
+  gap: 2px;
+}
+
+.footer-email-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5%;
+}
+
+.footer-email {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.footer-copyright {
+  color: white;
+  font-size: 0.9rem;
+  text-overflow: clip;
+  white-space: nowrap;
+}

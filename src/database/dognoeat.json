@@ -1,0 +1,460 @@
+[
+  { "id": 1, "name": "닭고기", "isOkay": true },
+  { "id": 2, "name": "소고기", "isOkay": true },
+  { "id": 3, "name": "연어", "isOkay": true },
+  { "id": 4, "name": "고구마", "isOkay": true },
+  { "id": 5, "name": "당근", "isOkay": true },
+  { "id": 6, "name": "브로콜리", "isOkay": true },
+  { "id": 7, "name": "사과", "isOkay": true },
+  { "id": 8, "name": "바나나", "isOkay": true },
+  { "id": 9, "name": "블루베리", "isOkay": true },
+  { "id": 10, "name": "오트밀", "isOkay": true },
+  { "id": 11, "name": "계란", "isOkay": true },
+  { "id": 12, "name": "오리고기", "isOkay": true },
+  { "id": 13, "name": "칠면조고기", "isOkay": true },
+  { "id": 14, "name": "양고기", "isOkay": true },
+  { "id": 15, "name": "흰살생선(대구, 틸라피아)", "isOkay": true },
+  { "id": 16, "name": "코티지 치즈(무염)", "isOkay": true },
+  { "id": 17, "name": "플레인 요거트(무가당)", "isOkay": true },
+  { "id": 18, "name": "호박", "isOkay": true },
+  { "id": 19, "name": "오이", "isOkay": true },
+  { "id": 20, "name": "콩나물", "isOkay": true },
+  { "id": 21, "name": "양배추", "isOkay": true },
+  { "id": 22, "name": "콜리플라워", "isOkay": true },
+  { "id": 23, "name": "상추", "isOkay": true },
+  { "id": 24, "name": "시금치(소량)", "isOkay": true },
+  { "id": 25, "name": "무", "isOkay": true },
+  { "id": 26, "name": "파프리카", "isOkay": true },
+  { "id": 27, "name": "참외", "isOkay": true },
+  { "id": 28, "name": "배", "isOkay": true },
+  { "id": 29, "name": "복숭아(껍질 제거)", "isOkay": true },
+  { "id": 30, "name": "자두", "isOkay": true },
+  { "id": 31, "name": "키위(소량)", "isOkay": true },
+  { "id": 32, "name": "딸기", "isOkay": true },
+  { "id": 33, "name": "수박(씨 제거)", "isOkay": true },
+  { "id": 34, "name": "멜론", "isOkay": true },
+  { "id": 35, "name": "땅콩버터(무염, 무설탕)", "isOkay": true },
+  { "id": 36, "name": "퀴노아", "isOkay": true },
+  { "id": 37, "name": "찐 현미", "isOkay": true },
+  { "id": 38, "name": "고등어(소량)", "isOkay": true },
+  { "id": 39, "name": "정어리", "isOkay": true },
+  { "id": 40, "name": "메추리알", "isOkay": true },
+  { "id": 41, "name": "코코넛 오일(소량)", "isOkay": true },
+  { "id": 42, "name": "치아씨드(소량)", "isOkay": true },
+  { "id": 43, "name": "아마씨(소량)", "isOkay": true },
+  { "id": 44, "name": "메추리 고기", "isOkay": true },
+  { "id": 45, "name": "토끼 고기", "isOkay": true },
+  { "id": 46, "name": "사슴 고기", "isOkay": true },
+  { "id": 47, "name": "참치(소량)", "isOkay": true },
+  { "id": 48, "name": "꽁치(소량)", "isOkay": true },
+  { "id": 49, "name": "명태", "isOkay": true },
+  { "id": 50, "name": "홍합(익힌 것)", "isOkay": true },
+  { "id": 51, "name": "조개(익힌 것)", "isOkay": true },
+  { "id": 52, "name": "귀리", "isOkay": true },
+  { "id": 53, "name": "보리", "isOkay": true },
+  { "id": 54, "name": "메밀(소량)", "isOkay": true },
+  { "id": 55, "name": "강낭콩(익힌 것)", "isOkay": true },
+  { "id": 56, "name": "렌틸콩(익힌 것)", "isOkay": true },
+  { "id": 57, "name": "녹두(익힌 것)", "isOkay": true },
+  { "id": 58, "name": "완두콩", "isOkay": true },
+  { "id": 59, "name": "해바라기씨(소량, 무염)", "isOkay": true },
+  { "id": 60, "name": "참깨(소량)", "isOkay": true },
+  { "id": 61, "name": "코코넛 과육", "isOkay": true },
+  { "id": 62, "name": "무화과(껍질 제거)", "isOkay": true },
+  { "id": 63, "name": "아로니아", "isOkay": true },
+  { "id": 64, "name": "구아바", "isOkay": true },
+  { "id": 65, "name": "파파야(씨 제거)", "isOkay": true },
+  { "id": 66, "name": "체리(씨 제거)", "isOkay": true },
+  { "id": 67, "name": "망고(소량, 씨 제거)", "isOkay": true },
+  { "id": 68, "name": "라즈베리", "isOkay": true },
+  { "id": 69, "name": "크랜베리", "isOkay": true },
+  { "id": 70, "name": "비트(익힌 것, 소량)", "isOkay": true },
+  { "id": 71, "name": "아스파라거스", "isOkay": true },
+  { "id": 72, "name": "케일(소량)", "isOkay": true },
+  { "id": 73, "name": "애호박", "isOkay": true },
+  { "id": 74, "name": "고사리(익힌 것, 소량)", "isOkay": true },
+  { "id": 75, "name": "미역(소량)", "isOkay": true },
+  { "id": 76, "name": "다시마(소량)", "isOkay": true },
+  {
+    "id": 1001,
+    "name": "초콜릿",
+    "ingredient": "테오브로민",
+    "isOkay": false
+  },
+  {
+    "id": 1002,
+    "name": "포도",
+    "ingredient": "신독성 물질(정확한 성분 미확인)",
+    "isOkay": false
+  },
+  {
+    "id": 1003,
+    "name": "건포도",
+    "ingredient": "신독성 물질(정확한 성분 미확인)",
+    "isOkay": false
+  },
+  {
+    "id": 1004,
+    "name": "양파",
+    "ingredient": "유기황 화합물",
+    "isOkay": false
+  },
+  {
+    "id": 1005,
+    "name": "마늘",
+    "ingredient": "유기황 화합물",
+    "isOkay": false
+  },
+  {
+    "id": 1006,
+    "name": "대파",
+    "ingredient": "유기황 화합물",
+    "isOkay": false
+  },
+  {
+    "id": 1007,
+    "name": "부추",
+    "ingredient": "유기황 화합물",
+    "isOkay": false
+  },
+  {
+    "id": 1008,
+    "name": "카페인 음료",
+    "ingredient": "카페인",
+    "isOkay": false
+  },
+  { "id": 1009, "name": "커피", "ingredient": "카페인", "isOkay": false },
+  { "id": 1010, "name": "녹차", "ingredient": "카페인", "isOkay": false },
+  { "id": 1011, "name": "홍차", "ingredient": "카페인", "isOkay": false },
+  {
+    "id": 1012,
+    "name": "견과류(특히 마카다미아)",
+    "ingredient": "마카다미아 독성 성분",
+    "isOkay": false
+  },
+  { "id": 1013, "name": "호두", "ingredient": "옥살산", "isOkay": false },
+  {
+    "id": 1014,
+    "name": "아몬드",
+    "ingredient": "옥살산(과다 섭취 시 문제)",
+    "isOkay": false
+  },
+  { "id": 1015, "name": "알코올", "ingredient": "에탄올", "isOkay": false },
+  { "id": 1016, "name": "아보카도", "ingredient": "페르신", "isOkay": false },
+  {
+    "id": 1017,
+    "name": "우유 및 유제품",
+    "ingredient": "락토오스",
+    "isOkay": false
+  },
+  {
+    "id": 1018,
+    "name": "베이킹 반죽",
+    "ingredient": "이스트",
+    "isOkay": false
+  },
+  {
+    "id": 1019,
+    "name": "날달걀 흰자",
+    "ingredient": "아비딘(비오틴 흡수 저해)",
+    "isOkay": false
+  },
+  {
+    "id": 1020,
+    "name": "생선 뼈",
+    "ingredient": "소화 불량 및 질식 위험",
+    "isOkay": false
+  },
+  {
+    "id": 1021,
+    "name": "닭뼈(익힌 것)",
+    "ingredient": "부서질 때 날카롭게 부서져 내장 손상 위험",
+    "isOkay": false
+  },
+  {
+    "id": 1022,
+    "name": "소금",
+    "ingredient": "나트륨 중독 위험",
+    "isOkay": false
+  },
+  {
+    "id": 1023,
+    "name": "설탕",
+    "ingredient": "비만 및 당뇨 위험",
+    "isOkay": false
+  },
+  {
+    "id": 1024,
+    "name": "사탕",
+    "ingredient": "자일리톨(저혈당 유발 가능)",
+    "isOkay": false
+  },
+  {
+    "id": 1025,
+    "name": "껌",
+    "ingredient": "자일리톨(저혈당 유발 가능)",
+    "isOkay": false
+  },
+  {
+    "id": 1026,
+    "name": "초콜릿 우유",
+    "ingredient": "테오브로민 및 락토오스",
+    "isOkay": false
+  },
+  {
+    "id": 1027,
+    "name": "청량음료",
+    "ingredient": "카페인 및 인공 감미료",
+    "isOkay": false
+  },
+  {
+    "id": 1028,
+    "name": "버섯(일부)",
+    "ingredient": "독성 화합물 포함 가능",
+    "isOkay": false
+  },
+  {
+    "id": 1029,
+    "name": "날고기(오염 가능성)",
+    "ingredient": "살모넬라, 리스테리아 등",
+    "isOkay": false
+  },
+  {
+    "id": 1030,
+    "name": "생새우",
+    "ingredient": "기생충 및 소화 문제",
+    "isOkay": false
+  },
+  { "id": 1031, "name": "문어", "ingredient": "질식 위험", "isOkay": false },
+  { "id": 1032, "name": "낙지", "ingredient": "질식 위험", "isOkay": false },
+  { "id": 1033, "name": "고추", "ingredient": "캡사이신", "isOkay": false },
+  {
+    "id": 1034,
+    "name": "김치",
+    "ingredient": "과다 나트륨",
+    "isOkay": false
+  },
+  {
+    "id": 1035,
+    "name": "초콜릿 쿠키",
+    "ingredient": "테오브로민",
+    "isOkay": false
+  },
+  {
+    "id": 1036,
+    "name": "포도주스",
+    "ingredient": "신독성 물질(정확한 성분 미확인)",
+    "isOkay": false
+  },
+  {
+    "id": 1037,
+    "name": "복숭아 씨",
+    "ingredient": "청산 배당체",
+    "isOkay": false
+  },
+  {
+    "id": 1038,
+    "name": "살구 씨",
+    "ingredient": "청산 배당체",
+    "isOkay": false
+  },
+  {
+    "id": 1039,
+    "name": "사과 씨",
+    "ingredient": "청산 배당체",
+    "isOkay": false
+  },
+  {
+    "id": 1040,
+    "name": "배 씨",
+    "ingredient": "청산 배당체",
+    "isOkay": false
+  },
+  {
+    "id": 1041,
+    "name": "은행",
+    "ingredient": "메틸피리독신",
+    "isOkay": false
+  },
+  {
+    "id": 1042,
+    "name": "라임",
+    "ingredient": "광독성 화합물",
+    "isOkay": false
+  },
+  {
+    "id": 1043,
+    "name": "레몬",
+    "ingredient": "광독성 화합물",
+    "isOkay": false
+  },
+  {
+    "id": 1044,
+    "name": "자몽",
+    "ingredient": "광독성 화합물",
+    "isOkay": false
+  },
+  {
+    "id": 1045,
+    "name": "오렌지(과다 섭취 시)",
+    "ingredient": "위장 장애 가능",
+    "isOkay": false
+  },
+  {
+    "id": 1046,
+    "name": "석류",
+    "ingredient": "탄닌(소화 불량 유발 가능)",
+    "isOkay": false
+  },
+  {
+    "id": 1047,
+    "name": "페르시몬(감)",
+    "ingredient": "탄닌(소화 불량 유발 가능)",
+    "isOkay": false
+  },
+  {
+    "id": 1048,
+    "name": "날고사리",
+    "ingredient": "티아미나제(비타민 B1 분해)",
+    "isOkay": false
+  },
+  {
+    "id": 1049,
+    "name": "날미역",
+    "ingredient": "요오드 과다",
+    "isOkay": false
+  },
+  {
+    "id": 1050,
+    "name": "날다시마",
+    "ingredient": "요오드 과다",
+    "isOkay": false
+  },
+  { "id": 1051, "name": "후추", "ingredient": "캡사이신", "isOkay": false },
+  {
+    "id": 1052,
+    "name": "겨자",
+    "ingredient": "이소티오시아네이트",
+    "isOkay": false
+  },
+  {
+    "id": 1053,
+    "name": "고추냉이",
+    "ingredient": "이소티오시아네이트",
+    "isOkay": false
+  },
+  {
+    "id": 1054,
+    "name": "절인 채소(피클, 김치 등)",
+    "ingredient": "과다 나트륨",
+    "isOkay": false
+  },
+  {
+    "id": 1055,
+    "name": "마가린",
+    "ingredient": "트랜스 지방",
+    "isOkay": false
+  },
+  {
+    "id": 1056,
+    "name": "버터(과다 섭취 시)",
+    "ingredient": "포화 지방 과다",
+    "isOkay": false
+  },
+  {
+    "id": 1057,
+    "name": "냉동 반죽 제품",
+    "ingredient": "이스트 발효 문제",
+    "isOkay": false
+  },
+  {
+    "id": 1058,
+    "name": "마요네즈",
+    "ingredient": "고지방 및 소화 장애 유발 가능",
+    "isOkay": false
+  },
+  {
+    "id": 1059,
+    "name": "핫도그",
+    "ingredient": "고염분 및 방부제",
+    "isOkay": false
+  },
+  {
+    "id": 1060,
+    "name": "소시지",
+    "ingredient": "고염분 및 방부제",
+    "isOkay": false
+  },
+  {
+    "id": 1061,
+    "name": "베이컨",
+    "ingredient": "고염분 및 지방 과다",
+    "isOkay": false
+  },
+  {
+    "id": 1062,
+    "name": "라면",
+    "ingredient": "과다 나트륨 및 인공 조미료",
+    "isOkay": false
+  },
+  {
+    "id": 1063,
+    "name": "즉석 국수류",
+    "ingredient": "과다 나트륨 및 방부제",
+    "isOkay": false
+  },
+  {
+    "id": 1064,
+    "name": "튀긴 name",
+    "ingredient": "고지방 및 소화 장애",
+    "isOkay": false
+  },
+  {
+    "id": 1065,
+    "name": "도넛",
+    "ingredient": "설탕 및 지방 과다",
+    "isOkay": false
+  },
+  {
+    "id": 1066,
+    "name": "파이",
+    "ingredient": "설탕 및 지방 과다",
+    "isOkay": false
+  },
+  {
+    "id": 1067,
+    "name": "크림 케이크",
+    "ingredient": "설탕 및 지방 과다",
+    "isOkay": false
+  },
+  {
+    "id": 1068,
+    "name": "초콜릿 시럽",
+    "ingredient": "테오브로민",
+    "isOkay": false
+  },
+  {
+    "id": 1069,
+    "name": "카라멜",
+    "ingredient": "설탕 과다",
+    "isOkay": false
+  },
+  {
+    "id": 1070,
+    "name": "젤리",
+    "ingredient": "인공 감미료 및 설탕 과다",
+    "isOkay": false
+  },
+  {
+    "id": 1071,
+    "name": "팝콘(버터 첨가된 것)",
+    "ingredient": "소화 장애 및 고염분",
+    "isOkay": false
+  },
+  {
+    "id": 1072,
+    "name": "치즈볼",
+    "ingredient": "고염분 및 인공 조미료",
+    "isOkay": false
+  }
+]
