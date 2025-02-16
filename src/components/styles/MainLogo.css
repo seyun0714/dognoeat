@@ -20,12 +20,19 @@
   font-weight: bold;
 
   text-overflow: clip;
-  white-space: nowrap;
+  white-space: norwap;
+}
+
+.main-description {
+  font-size: 1rem;
+  color: rgb(68, 68, 68);
+  font-weight: 300;
+  margin-top: 10px;
 }
 
 @media (max-width: 767px) {
   .main-logo-wrapper {
-    margin-top: 120px;
+    margin-top: 100px;
   }
   .main-logo {
     width: 120px;
@@ -34,11 +41,14 @@
   .main-title {
     font-size: 2.3rem;
   }
+  .main-description {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .main-logo-wrapper {
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .main-logo {
     width: 160px;
@@ -46,6 +56,9 @@
   }
   .main-title {
     font-size: 2.5rem;
+  }
+  .main-description {
+    font-size: 1.3rem;
   }
 }
 
@@ -60,6 +73,9 @@
   .main-title {
     font-size: 2.6rem;
   }
+  .main-description {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -72,5 +88,8 @@
   }
   .main-title {
     font-size: 3rem;
+  }
+  .main-description {
+    font-size: 1.7rem;
   }
 }

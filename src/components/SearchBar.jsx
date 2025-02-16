@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./styles/SearchBar.css";
 import foodData from "../database/dognoeat.json";
 
@@ -8,10 +8,16 @@ export default function SearchBar({}) {
   const [isOpen, setIsOpen] = useState(false);
   const [data] = useState(foodData);
 
+  const handleClickReset = () => {
+    setInputValue("");
+    setSuggestion([]);
+    setIsOpen(false);
+  };
+
   const handleInputChange = (e) => {
     const value = e.target.value;
     setInputValue(value);
-    console.log(value);
+    //console.log(value);
 
     if (value.trim() === "") {
       setSuggestion([]);
@@ -39,7 +45,7 @@ export default function SearchBar({}) {
       a.name.localeCompare(b.name, "ko")
     );
 
-    const combined = [...sortedStartWith, ...sortedContains].slice(0, 3);
+    const combined = [...sortedStartWith, ...sortedContains].slice(0, 5);
 
     setSuggestion(combined);
     setIsOpen(true);
@@ -50,36 +56,75 @@ export default function SearchBar({}) {
     console.log(inputValue);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.code === "Enter") {
+      e.preventDefault();
+      console.log(inputValue);
+    } else if (e.code === "ArrowDown") {
+      e.preventDefault();
+    }
+  };
+
+  const handleSuggestionClick = (suggestValue) => {
+    console.log(suggestValue.name);
+  };
+
   return (
     <div className="search-wrapper">
-      <div className="search-bar-wrapper">
-        <form
-          className="search-bar-form"
-          onSubmit={(event) => handleSubmit(event)}
-        >
+      <div
+        className={isOpen ? "search-bar-wrapper isopen" : "search-bar-wrapper"}
+      >
+        <form className="search-bar-form" onSubmit={handleSubmit}>
           <input
             className="search-bar-input"
             value={inputValue}
             type="text"
             placeholder="검색어를 입력하세요"
-            onChange={(event) => handleInputChange(event)}
+            onChange={handleInputChange}
+            onCompositionEnd={handleInputChange}
+            onKeyDown={handleKeyDown}
           />
-          <button className="search-bar-button" type="submit">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
+          <div className="search-bar-button-wrapper">
+            <button
+              className={
+                inputValue
+                  ? "search-bar-input-reset"
+                  : "search-bar-input-reset hidden"
+              }
+              onClick={handleClickReset}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <button className="search-bar-button" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
       {isOpen && suggestion.length > 0 && (
