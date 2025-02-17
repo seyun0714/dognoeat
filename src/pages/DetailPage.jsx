@@ -2,9 +2,9 @@ import React from "react";
 
 export default function () {
   return (
-    <div className="list-wrapper">
+    <div className="page-wrapper">
       <Header></Header>
-      <div className="list-content-wrapper"></div>
+      <div className="detail-content-wrapper"></div>
       <Footer></Footer>
     </div>
   );

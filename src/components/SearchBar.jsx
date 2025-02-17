@@ -1,14 +1,18 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./styles/SearchBar.css";
 import foodData from "../database/dognoeat.json";
+import { useNavigate } from "react-router-dom";
 
 export default function SearchBar({}) {
+  const navigate = useNavigate();
   const [inputValue, setInputValue] = useState("");
   const [suggestion, setSuggestion] = useState([]);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
   const [isOpen, setIsOpen] = useState(false);
   const [data] = useState(foodData);
 
-  const handleClickReset = () => {
+  const handleClickReset = (e) => {
+    e.preventDefault();
     setInputValue("");
     setSuggestion([]);
     setIsOpen(false);
@@ -18,6 +22,7 @@ export default function SearchBar({}) {
     const value = e.target.value;
     setInputValue(value);
     //console.log(value);
+    setSelectedIndex(-1);
 
     if (value.trim() === "") {
       setSuggestion([]);
@@ -45,7 +50,7 @@ export default function SearchBar({}) {
       a.name.localeCompare(b.name, "ko")
     );
 
-    const combined = [...sortedStartWith, ...sortedContains].slice(0, 5);
+    const combined = [...sortedStartWith, ...sortedContains].slice(0, 4);
 
     setSuggestion(combined);
     setIsOpen(true);
@@ -54,14 +59,25 @@ export default function SearchBar({}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputValue);
+    navigate(`/detail/${inputValue}`);
   };
 
   const handleKeyDown = (e) => {
+    if (inputValue === "") {
+      return;
+    }
     if (e.code === "Enter") {
       e.preventDefault();
       console.log(inputValue);
+      navigate(`/detail/${inputValue}`);
     } else if (e.code === "ArrowDown") {
       e.preventDefault();
+      setSelectedIndex((prev) => Math.min(prev + 1, suggestion.length - 1));
+      if (selectedIndex !== -1) setInputValue(suggestion[selectedIndex].name);
+    } else if (e.code === "ArrowUp") {
+      e.preventDefault();
+      setSelectedIndex((prev) => Math.max(prev - 1, 0));
+      if (selectedIndex !== -1) setInputValue(suggestion[selectedIndex].name);
     }
   };
 
@@ -72,7 +88,9 @@ export default function SearchBar({}) {
   return (
     <div className="search-wrapper">
       <div
-        className={isOpen ? "search-bar-wrapper isopen" : "search-bar-wrapper"}
+        className={
+          inputValue !== "" ? "search-bar-wrapper isopen" : "search-bar-wrapper"
+        }
       >
         <form className="search-bar-form" onSubmit={handleSubmit}>
           <input
@@ -81,8 +99,9 @@ export default function SearchBar({}) {
             type="text"
             placeholder="검색어를 입력하세요"
             onChange={handleInputChange}
-            onCompositionEnd={handleInputChange}
             onKeyDown={handleKeyDown}
+            onBlur={() => setIsOpen(false)}
+            onFocus={() => setIsOpen(true)}
           />
           <div className="search-bar-button-wrapper">
             <button

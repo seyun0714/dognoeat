@@ -7,7 +7,7 @@ import "./styles/pages.css";
 
 export default function MainPage() {
   return (
-    <div className="main-wrapper">
+    <div className="page-wrapper">
       <Header></Header>
       <div className="main-content-wrapper">
         <MainLogo></MainLogo>
