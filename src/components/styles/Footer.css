@@ -9,29 +9,25 @@ footer {
   background-color: lightslategrey;
 }
 
-.footer-wrapper {
-  padding: 5px;
-  gap: 2px;
-}
-
 .footer-email-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.5%;
+  padding: 2px;
 }
 
 .footer-email {
   color: white;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-overflow: clip;
   white-space: nowrap;
 }
 
 .footer-copyright {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-overflow: clip;
   white-space: nowrap;
+  padding: 2px;
 }

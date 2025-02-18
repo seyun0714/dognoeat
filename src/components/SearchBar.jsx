@@ -3,7 +3,7 @@ import "./styles/SearchBar.css";
 import foodData from "../database/dognoeat.json";
 import { useNavigate } from "react-router-dom";
 
-export default function SearchBar({}) {
+export default function SearchBar({ type }) {
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState("");
   const [suggestion, setSuggestion] = useState([]);
@@ -50,7 +50,7 @@ export default function SearchBar({}) {
       a.name.localeCompare(b.name, "ko")
     );
 
-    const combined = [...sortedStartWith, ...sortedContains].slice(0, 4);
+    const combined = [...sortedStartWith, ...sortedContains].slice(0, 5);
 
     setSuggestion(combined);
     setIsOpen(true);
@@ -68,7 +68,7 @@ export default function SearchBar({}) {
     }
     if (e.code === "Enter") {
       e.preventDefault();
-      console.log(inputValue);
+      setIsOpen(false);
       navigate(`/detail/${inputValue}`);
     } else if (e.code === "ArrowDown") {
       e.preventDefault();
@@ -86,10 +86,12 @@ export default function SearchBar({}) {
   };
 
   return (
-    <div className="search-wrapper">
+    <div className={`search-wrapper ${type}`}>
       <div
         className={
-          inputValue !== "" ? "search-bar-wrapper isopen" : "search-bar-wrapper"
+          inputValue !== ""
+            ? `search-bar-wrapper isopen ${type}`
+            : `search-bar-wrapper ${type}`
         }
       >
         <form className="search-bar-form" onSubmit={handleSubmit}>
