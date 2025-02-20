@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <MainPage />,
       },
       {
-        path: "/detail/:search",
+        path: "/detail",
         element: <DetailPage />,
       },
     ],

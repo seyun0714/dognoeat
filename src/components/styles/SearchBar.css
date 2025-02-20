@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 }
 .search-wrapper.home {
   width: 50%;
@@ -126,10 +127,13 @@
   width: 100%;
   box-sizing: content-box;
   font-size: 1rem;
+  position: absolute;
+  top: 100%;
 }
 
 .search-suggestion {
   cursor: pointer;
+  pointer-events: auto;
   padding: 5px 5px 5px 25px;
   font-weight: 300;
 }

@@ -3,9 +3,9 @@ import "./styles/SearchBar.css";
 import foodData from "../database/dognoeat.json";
 import { useNavigate } from "react-router-dom";
 
-export default function SearchBar({ type }) {
+export default function SearchBar({ type, query }) {
   const navigate = useNavigate();
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState(query);
   const [suggestion, setSuggestion] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,6 @@ export default function SearchBar({ type }) {
       setIsOpen(false);
       return;
     }
-
     const filteredSuggestions = data.filter((item) =>
       item.name.toLowerCase().includes(value.toLowerCase())
     );
@@ -59,7 +58,7 @@ export default function SearchBar({ type }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputValue);
-    navigate(`/detail/${inputValue}`);
+    navigate(`/detail/?query=${inputValue.toString()}`);
   };
 
   const handleKeyDown = (e) => {
@@ -69,7 +68,7 @@ export default function SearchBar({ type }) {
     if (e.code === "Enter") {
       e.preventDefault();
       setIsOpen(false);
-      navigate(`/detail/${inputValue}`);
+      navigate(`/detail/?query=${inputValue.toString()}`);
     } else if (e.code === "ArrowDown") {
       e.preventDefault();
       setSelectedIndex((prev) => Math.min(prev + 1, suggestion.length - 1));
@@ -81,8 +80,15 @@ export default function SearchBar({ type }) {
     }
   };
 
-  const handleSuggestionClick = (suggestValue) => {
-    console.log(suggestValue.name);
+  const handleSuggestionClick = (e, suggestValue) => {
+    e.stopPropagation();
+    navigate(`/detail/?query=${inputValue.toString()}`);
+  };
+
+  const handleBlur = () => {
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 100);
   };
 
   return (
@@ -102,7 +108,7 @@ export default function SearchBar({ type }) {
             placeholder="검색어를 입력하세요"
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
-            onBlur={() => setIsOpen(false)}
+            onBlur={handleBlur}
             onFocus={() => setIsOpen(true)}
           />
           <div className="search-bar-button-wrapper">
@@ -151,25 +157,19 @@ export default function SearchBar({ type }) {
       {isOpen && suggestion.length > 0 && (
         <div className="search-suggestion-wrapper">
           <ul className="search-suggestion-list">
-            {suggestion.map((suggestion) =>
-              suggestion.isOkay ? (
-                <li
-                  key={suggestion.id}
-                  onClick={() => handleSuggestionClick(suggestion)}
-                  className="search-suggestion yes"
-                >
-                  <span>{suggestion.name}</span>
-                </li>
-              ) : (
-                <li
-                  key={suggestion.id}
-                  onClick={() => handleSuggestionClick(suggestion)}
-                  className="search-suggestion no"
-                >
-                  <span>{suggestion.name}</span>
-                </li>
-              )
-            )}
+            {suggestion.map((suggestion) => (
+              <li
+                key={suggestion.id}
+                onClick={(e) => handleSuggestionClick(e, suggestion)}
+                className={
+                  suggestion.isOkay
+                    ? "search-suggestion yes"
+                    : "search-suggestion no"
+                }
+              >
+                <span>{suggestion.name}</span>
+              </li>
+            ))}
           </ul>
         </div>
       )}

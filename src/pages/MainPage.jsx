@@ -11,7 +11,7 @@ export default function MainPage() {
       <Header></Header>
       <div className="main-content-wrapper">
         <MainLogo></MainLogo>
-        <SearchBar type={"home"}></SearchBar>
+        <SearchBar type={"home"} query={""}></SearchBar>
       </div>
       <Footer></Footer>
     </div>
