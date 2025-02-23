@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
 import foodData from "../database/dognoeat.json";
 import { useSearchParams } from "react-router-dom";
+import Card from "../components/Card";
 
 export default function DetailPage() {
   const data = useState(foodData);
@@ -15,7 +16,20 @@ export default function DetailPage() {
     const fda = data[0].filter((item) =>
       item.name.toLowerCase().includes(query.toLowerCase())
     );
-    setFilteredData(fda);
+    const startsWithQuery = fda.filter((item) =>
+      item.name.toLowerCase().startsWith(query.toLowerCase())
+    );
+    const contiansQuery = fda.filter(
+      (item) => !item.name.toLowerCase().startsWith(query.toLowerCase())
+    );
+    const sortedStartWith = startsWithQuery.sort((a, b) =>
+      a.name.localeCompare(b.name, "ko")
+    );
+    const sortedContains = contiansQuery.sort((a, b) =>
+      a.name.localeCompare(b.name, "ko")
+    );
+    const combined = [...sortedStartWith, ...sortedContains];
+    setFilteredData(combined);
   }, [query]);
 
   return (
@@ -25,7 +39,12 @@ export default function DetailPage() {
         <SearchBar type={"detail"} query={query}></SearchBar>
         <div className="detail-search-list">
           {filteredData.map((item) => (
-            <div key={item.id}>{item.name}</div>
+            <Card
+              title={item.name}
+              description={"자세한 설명"}
+              isOkay={item.isOkay}
+              key={item.id}
+            ></Card>
           ))}
         </div>
       </div>
