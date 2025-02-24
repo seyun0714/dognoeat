@@ -41,7 +41,7 @@ export default function DetailPage() {
           {filteredData.map((item) => (
             <Card
               title={item.name}
-              description={"자세한 설명"}
+              description={item.description}
               isOkay={item.isOkay}
               key={item.id}
             ></Card>

@@ -1,460 +1,1117 @@
 [
-  { "id": 1, "name": "닭고기", "isOkay": true },
-  { "id": 2, "name": "소고기", "isOkay": true },
-  { "id": 3, "name": "연어", "isOkay": true },
-  { "id": 4, "name": "고구마", "isOkay": true },
-  { "id": 5, "name": "당근", "isOkay": true },
-  { "id": 6, "name": "브로콜리", "isOkay": true },
-  { "id": 7, "name": "사과", "isOkay": true },
-  { "id": 8, "name": "바나나", "isOkay": true },
-  { "id": 9, "name": "블루베리", "isOkay": true },
-  { "id": 10, "name": "오트밀", "isOkay": true },
-  { "id": 11, "name": "계란", "isOkay": true },
-  { "id": 12, "name": "오리고기", "isOkay": true },
-  { "id": 13, "name": "칠면조고기", "isOkay": true },
-  { "id": 14, "name": "양고기", "isOkay": true },
-  { "id": 15, "name": "흰살생선(대구, 틸라피아)", "isOkay": true },
-  { "id": 16, "name": "코티지 치즈(무염)", "isOkay": true },
-  { "id": 17, "name": "플레인 요거트(무가당)", "isOkay": true },
-  { "id": 18, "name": "호박", "isOkay": true },
-  { "id": 19, "name": "오이", "isOkay": true },
-  { "id": 20, "name": "콩나물", "isOkay": true },
-  { "id": 21, "name": "양배추", "isOkay": true },
-  { "id": 22, "name": "콜리플라워", "isOkay": true },
-  { "id": 23, "name": "상추", "isOkay": true },
-  { "id": 24, "name": "시금치(소량)", "isOkay": true },
-  { "id": 25, "name": "무", "isOkay": true },
-  { "id": 26, "name": "파프리카", "isOkay": true },
-  { "id": 27, "name": "참외", "isOkay": true },
-  { "id": 28, "name": "배", "isOkay": true },
-  { "id": 29, "name": "복숭아(껍질 제거)", "isOkay": true },
-  { "id": 30, "name": "자두", "isOkay": true },
-  { "id": 31, "name": "키위(소량)", "isOkay": true },
-  { "id": 32, "name": "딸기", "isOkay": true },
-  { "id": 33, "name": "수박(씨 제거)", "isOkay": true },
-  { "id": 34, "name": "멜론", "isOkay": true },
-  { "id": 35, "name": "땅콩버터(무염, 무설탕)", "isOkay": true },
-  { "id": 36, "name": "퀴노아", "isOkay": true },
-  { "id": 37, "name": "찐 현미", "isOkay": true },
-  { "id": 38, "name": "고등어(소량)", "isOkay": true },
-  { "id": 39, "name": "정어리", "isOkay": true },
-  { "id": 40, "name": "메추리알", "isOkay": true },
-  { "id": 41, "name": "코코넛 오일(소량)", "isOkay": true },
-  { "id": 42, "name": "치아씨드(소량)", "isOkay": true },
-  { "id": 43, "name": "아마씨(소량)", "isOkay": true },
-  { "id": 44, "name": "메추리 고기", "isOkay": true },
-  { "id": 45, "name": "토끼 고기", "isOkay": true },
-  { "id": 46, "name": "사슴 고기", "isOkay": true },
-  { "id": 47, "name": "참치(소량)", "isOkay": true },
-  { "id": 48, "name": "꽁치(소량)", "isOkay": true },
-  { "id": 49, "name": "명태", "isOkay": true },
-  { "id": 50, "name": "홍합(익힌 것)", "isOkay": true },
-  { "id": 51, "name": "조개(익힌 것)", "isOkay": true },
-  { "id": 52, "name": "귀리", "isOkay": true },
-  { "id": 53, "name": "보리", "isOkay": true },
-  { "id": 54, "name": "메밀(소량)", "isOkay": true },
-  { "id": 55, "name": "강낭콩(익힌 것)", "isOkay": true },
-  { "id": 56, "name": "렌틸콩(익힌 것)", "isOkay": true },
-  { "id": 57, "name": "녹두(익힌 것)", "isOkay": true },
-  { "id": 58, "name": "완두콩", "isOkay": true },
-  { "id": 59, "name": "해바라기씨(소량, 무염)", "isOkay": true },
-  { "id": 60, "name": "참깨(소량)", "isOkay": true },
-  { "id": 61, "name": "코코넛 과육", "isOkay": true },
-  { "id": 62, "name": "무화과(껍질 제거)", "isOkay": true },
-  { "id": 63, "name": "아로니아", "isOkay": true },
-  { "id": 64, "name": "구아바", "isOkay": true },
-  { "id": 65, "name": "파파야(씨 제거)", "isOkay": true },
-  { "id": 66, "name": "체리(씨 제거)", "isOkay": true },
-  { "id": 67, "name": "망고(소량, 씨 제거)", "isOkay": true },
-  { "id": 68, "name": "라즈베리", "isOkay": true },
-  { "id": 69, "name": "크랜베리", "isOkay": true },
-  { "id": 70, "name": "비트(익힌 것, 소량)", "isOkay": true },
-  { "id": 71, "name": "아스파라거스", "isOkay": true },
-  { "id": 72, "name": "케일(소량)", "isOkay": true },
-  { "id": 73, "name": "애호박", "isOkay": true },
-  { "id": 74, "name": "고사리(익힌 것, 소량)", "isOkay": true },
-  { "id": 75, "name": "미역(소량)", "isOkay": true },
-  { "id": 76, "name": "다시마(소량)", "isOkay": true },
   {
-    "id": 1001,
-    "name": "초콜릿",
-    "ingredient": "테오브로민",
-    "isOkay": false
+    "id": 1,
+    "name": "사과",
+    "isOkay": 2,
+    "description": "섬유질과 비타민이 풍부해 소화에 도움되나, 씨와 심은 시안화물 위험으로 제거해야 함.",
+    "category": 1
   },
   {
-    "id": 1002,
+    "id": 2,
+    "name": "바나나",
+    "isOkay": 1,
+    "description": "칼륨과 비타민 B6가 풍부해 에너지와 소화를 돕습니다.",
+    "category": 1
+  },
+  {
+    "id": 3,
     "name": "포도",
-    "ingredient": "신독성 물질(정확한 성분 미확인)",
-    "isOkay": false
+    "isOkay": 3,
+    "description": "신부전 유발 가능성 있는 성분 포함, 소량도 위험해 구토와 무기력 초래.",
+    "category": 1
   },
   {
-    "id": 1003,
-    "name": "건포도",
-    "ingredient": "신독성 물질(정확한 성분 미확인)",
-    "isOkay": false
+    "id": 4,
+    "name": "수박",
+    "isOkay": 1,
+    "description": "수분과 비타민 A가 많아 탈수 예방과 피부 건강에 도움.",
+    "category": 1
   },
   {
-    "id": 1004,
+    "id": 5,
+    "name": "아보카도",
+    "isOkay": 3,
+    "description": "퍼신 성분이 있어 구토, 설사, 호흡 곤란을 유발할 수 있음.",
+    "category": 1
+  },
+  {
+    "id": 34,
+    "name": "딸기",
+    "isOkay": 1,
+    "description": "비타민 C가 풍부해 면역력과 피부 건강에 도움됩니다.",
+    "category": 1
+  },
+  {
+    "id": 35,
+    "name": "오렌지",
+    "isOkay": 2,
+    "description": "비타민 C가 많아 면역에 좋으나 과다 섭취 시 소화 불량 주의.",
+    "category": 1
+  },
+  {
+    "id": 36,
+    "name": "체리",
+    "isOkay": 3,
+    "description": "씨에 시안화물이 있어 구토와 중독 증상을 유발할 수 있음.",
+    "category": 1
+  },
+  {
+    "id": 37,
+    "name": "복숭아",
+    "isOkay": 2,
+    "description": "비타민 A와 섬유질 풍부하나 씨는 독성이 있어 제거 필요.",
+    "category": 1
+  },
+
+  {
+    "id": 6,
+    "name": "당근",
+    "isOkay": 1,
+    "description": "베타카로틴이 풍부해 눈 건강과 소화를 돕습니다.",
+    "category": 2
+  },
+  {
+    "id": 7,
     "name": "양파",
-    "ingredient": "유기황 화합물",
-    "isOkay": false
+    "isOkay": 3,
+    "description": "N-프로필 디설파이드 성분이 적혈구 파괴, 빈혈과 구토 유발.",
+    "category": 2
   },
   {
-    "id": 1005,
+    "id": 8,
+    "name": "브로콜리",
+    "isOkay": 2,
+    "description": "비타민 C와 섬유질 풍부하나 과다 섭취 시 위장 장애 주의.",
+    "category": 2
+  },
+  {
+    "id": 9,
+    "name": "고구마",
+    "isOkay": 1,
+    "description": "섬유질과 비타민 A가 풍부해 변비 예방과 면역력 증진.",
+    "category": 2
+  },
+  {
+    "id": 10,
     "name": "마늘",
-    "ingredient": "유기황 화합물",
-    "isOkay": false
+    "isOkay": 3,
+    "description": "N-프로필 디설파이드가 적혈구 손상, 빈혈과 소화 장애 유발.",
+    "category": 2
   },
   {
-    "id": 1006,
-    "name": "대파",
-    "ingredient": "유기황 화합물",
-    "isOkay": false
+    "id": 11,
+    "name": "오이",
+    "isOkay": 1,
+    "description": "수분과 비타민 K가 많아 수분 보충과 뼈 건강에 도움.",
+    "category": 2
   },
   {
-    "id": 1007,
-    "name": "부추",
-    "ingredient": "유기황 화합물",
-    "isOkay": false
+    "id": 38,
+    "name": "시금치",
+    "isOkay": 1,
+    "description": "철분과 비타민이 많아 빈혈 예방과 체력 증진에 도움.",
+    "category": 2
   },
   {
-    "id": 1008,
-    "name": "카페인 음료",
-    "ingredient": "카페인",
-    "isOkay": false
-  },
-  { "id": 1009, "name": "커피", "ingredient": "카페인", "isOkay": false },
-  { "id": 1010, "name": "녹차", "ingredient": "카페인", "isOkay": false },
-  { "id": 1011, "name": "홍차", "ingredient": "카페인", "isOkay": false },
-  {
-    "id": 1012,
-    "name": "견과류(특히 마카다미아)",
-    "ingredient": "마카다미아 독성 성분",
-    "isOkay": false
-  },
-  { "id": 1013, "name": "호두", "ingredient": "옥살산", "isOkay": false },
-  {
-    "id": 1014,
-    "name": "아몬드",
-    "ingredient": "옥살산(과다 섭취 시 문제)",
-    "isOkay": false
-  },
-  { "id": 1015, "name": "알코올", "ingredient": "에탄올", "isOkay": false },
-  { "id": 1016, "name": "아보카도", "ingredient": "페르신", "isOkay": false },
-  {
-    "id": 1017,
-    "name": "우유 및 유제품",
-    "ingredient": "락토오스",
-    "isOkay": false
+    "id": 39,
+    "name": "토마토",
+    "isOkay": 2,
+    "description": "초록 부분에 토마틴 독성 있으므로 잘 익은 토마토의 과육만 급여. 비타민 C 풍부하나 잎과 줄기는 독성으로 제거 필요.",
+    "category": 2
   },
   {
-    "id": 1018,
-    "name": "베이킹 반죽",
-    "ingredient": "이스트",
-    "isOkay": false
+    "id": 41,
+    "name": "버섯",
+    "isOkay": 2,
+    "description": "항산화 성분이 풍부하나 야생(생)버섯은 독성 위험 있음. 익혀서 소량만 급여",
+    "category": 2
+  },
+
+  {
+    "id": 12,
+    "name": "닭고기",
+    "isOkay": 2,
+    "description": "단백질이 풍부해 근육 성장에 좋지만, 익힌 것만 급여. 날것은 살모넬라 위험.",
+    "category": 3
   },
   {
-    "id": 1019,
-    "name": "날달걀 흰자",
-    "ingredient": "아비딘(비오틴 흡수 저해)",
-    "isOkay": false
+    "id": 13,
+    "name": "소고기",
+    "isOkay": 1,
+    "description": "철분과 단백질이 많아 빈혈 예방과 체력 증진에 도움.",
+    "category": 3
   },
   {
-    "id": 1020,
-    "name": "생선 뼈",
-    "ingredient": "소화 불량 및 질식 위험",
-    "isOkay": false
+    "id": 14,
+    "name": "뼈",
+    "isOkay": 2,
+    "description": "칼슘 공급에 도움되나 익힌 뼈는 부서져 장 폐쇄 위험, 생뼈 권장.",
+    "category": 3
   },
   {
-    "id": 1021,
-    "name": "닭뼈(익힌 것)",
-    "ingredient": "부서질 때 날카롭게 부서져 내장 손상 위험",
-    "isOkay": false
+    "id": 15,
+    "name": "연어",
+    "isOkay": 2,
+    "description": "오메가-3가 풍부해 피부와 심장에 좋으나, 날것은 기생충 위험.",
+    "category": 3
   },
   {
-    "id": 1022,
-    "name": "소금",
-    "ingredient": "나트륨 중독 위험",
-    "isOkay": false
+    "id": 16,
+    "name": "돼지고기",
+    "isOkay": 2,
+    "description": "단백질과 비타민 B1 풍부하나, 지방 많아 소량만 급여.",
+    "category": 3
   },
   {
-    "id": 1023,
+    "id": 17,
+    "name": "계란",
+    "isOkay": 2,
+    "description": "단백질과 비타민 D 풍부하나, 날것은 비오틴 결핍 위험.",
+    "category": 3
+  },
+  {
+    "id": 42,
+    "name": "오리고기",
+    "isOkay": 2,
+    "description": "단백질과 철분 많으나 지방 많아 소량 급여 필요.",
+    "category": 3
+  },
+  {
+    "id": 43,
+    "name": "정어리",
+    "isOkay": 1,
+    "description": "오메가-3와 칼슘이 풍부해 뼈와 심장 건강에 도움.",
+    "category": 3
+  },
+  {
+    "id": 18,
+    "name": "초콜릿",
+    "isOkay": 3,
+    "description": "테오브로민 성분이 있어 구토, 발작, 심장 문제를 일으킬 수 있음.",
+    "category": 4
+  },
+  {
+    "id": 19,
+    "name": "우유",
+    "isOkay": 2,
+    "description": "칼슘 제공하나 유당 불내증으로 설사와 복부 팽만 유발 가능.",
+    "category": 4
+  },
+  {
+    "id": 20,
+    "name": "땅콩",
+    "isOkay": 1,
+    "description": "단백질과 건강한 지방이 풍부해 간식으로 적합.",
+    "category": 4
+  },
+  {
+    "id": 22,
+    "name": "쌀",
+    "isOkay": 1,
+    "description": "탄수화물 제공으로 에너지원이 되며 소화에도 도움.",
+    "category": 4
+  },
+  {
+    "id": 23,
+    "name": "치즈",
+    "isOkay": 2,
+    "description": "칼슘과 단백질 풍부하나 유당으로 소량만 급여.",
+    "category": 4
+  },
+  {
+    "id": 24,
     "name": "설탕",
-    "ingredient": "비만 및 당뇨 위험",
-    "isOkay": false
+    "isOkay": 2,
+    "description": "에너지원이 되나 과다 섭취 시 비만과 치아 문제 주의.",
+    "category": 4
   },
   {
-    "id": 1024,
-    "name": "사탕",
-    "ingredient": "자일리톨(저혈당 유발 가능)",
-    "isOkay": false
+    "id": 25,
+    "name": "포도씨유",
+    "isOkay": 3,
+    "description": "포도 유래 성분으로 신부전, 구토, 설사를 유발할 수 있음.",
+    "category": 4
   },
   {
-    "id": 1025,
-    "name": "껌",
-    "ingredient": "자일리톨(저혈당 유발 가능)",
-    "isOkay": false
+    "id": 26,
+    "name": "호두",
+    "isOkay": 3,
+    "description": "지방과 독성 물질 포함, 소화 장애와 신경 증상을 유발.",
+    "category": 4
   },
   {
-    "id": 1026,
-    "name": "초콜릿 우유",
-    "ingredient": "테오브로민 및 락토오스",
-    "isOkay": false
+    "id": 27,
+    "name": "빵",
+    "isOkay": 2,
+    "description": "탄수화물 제공하나 효모나 설탕 많아 소량만 급여.",
+    "category": 4
   },
   {
-    "id": 1027,
-    "name": "청량음료",
-    "ingredient": "카페인 및 인공 감미료",
-    "isOkay": false
+    "id": 28,
+    "name": "옥수수",
+    "isOkay": 1,
+    "description": "섬유질과 에너지를 제공해 소화와 활력에 도움.",
+    "category": 4
   },
   {
-    "id": 1028,
-    "name": "버섯(일부)",
-    "ingredient": "독성 화합물 포함 가능",
-    "isOkay": false
+    "id": 29,
+    "name": "커피",
+    "isOkay": 3,
+    "description": "카페인 성분으로 불안, 심박 증가, 발작을 유발할 수 있음.",
+    "category": 4
   },
   {
-    "id": 1029,
-    "name": "날고기(오염 가능성)",
-    "ingredient": "살모넬라, 리스테리아 등",
-    "isOkay": false
+    "id": 30,
+    "name": "요구르트",
+    "isOkay": 1,
+    "description": "프로바이오틱스가 있어 장 건강과 면역력에 도움.",
+    "category": 4
   },
   {
-    "id": 1030,
-    "name": "생새우",
-    "ingredient": "기생충 및 소화 문제",
-    "isOkay": false
+    "id": 31,
+    "name": "소금",
+    "isOkay": 3,
+    "description": "과다 나트륨으로 신부전, 경련, 탈수를 유발할 수 있음.",
+    "category": 4
   },
-  { "id": 1031, "name": "문어", "ingredient": "질식 위험", "isOkay": false },
-  { "id": 1032, "name": "낙지", "ingredient": "질식 위험", "isOkay": false },
-  { "id": 1033, "name": "고추", "ingredient": "캡사이신", "isOkay": false },
   {
-    "id": 1034,
+    "id": 32,
+    "name": "감자",
+    "isOkay": 2,
+    "description": "비타민 C와 탄수화물 풍부하나 날것은 소화 불량 주의.",
+    "category": 4
+  },
+  {
+    "id": 33,
+    "name": "참치",
+    "isOkay": 2,
+    "description": "단백질과 오메가-3 풍부하나 수은 많아 소량만 급여.",
+    "category": 4
+  },
+  {
+    "id": 45,
+    "name": "꿀",
+    "isOkay": 1,
+    "description": "항균 효과와 에너지를 제공해 건강에 도움.",
+    "category": 4
+  },
+  {
+    "id": 46,
+    "name": "아이스크림",
+    "isOkay": 3,
+    "description": "유당과 설탕 많아 설사와 비만을 유발할 수 있음.",
+    "category": 4
+  },
+  {
+    "id": 47,
     "name": "김치",
-    "ingredient": "과다 나트륨",
-    "isOkay": false
+    "isOkay": 3,
+    "description": "고추와 소금 많아 위장 장애와 신부전을 유발할 수 있음.",
+    "category": 4
   },
   {
-    "id": 1035,
-    "name": "초콜릿 쿠키",
-    "ingredient": "테오브로민",
-    "isOkay": false
+    "id": 48,
+    "name": "오트밀",
+    "isOkay": 1,
+    "description": "섬유질이 풍부해 소화와 심장 건강에 도움.",
+    "category": 4
   },
   {
-    "id": 1036,
-    "name": "포도주스",
-    "ingredient": "신독성 물질(정확한 성분 미확인)",
-    "isOkay": false
+    "id": 49,
+    "name": "버터",
+    "isOkay": 2,
+    "description": "지방 많아 에너지 제공하나 과다 섭취 시 비만 주의.",
+    "category": 4
   },
   {
-    "id": 1037,
-    "name": "복숭아 씨",
-    "ingredient": "청산 배당체",
-    "isOkay": false
+    "id": 50,
+    "name": "알코올",
+    "isOkay": 3,
+    "description": "중추신경 억제제로 혼수, 호흡 곤란을 유발할 수 있음.",
+    "category": 4
   },
   {
-    "id": 1038,
-    "name": "살구 씨",
-    "ingredient": "청산 배당체",
-    "isOkay": false
+    "id": 51,
+    "name": "메추리알",
+    "isOkay": 1,
+    "description": "단백질과 비타민이 풍부해 체력 증진에 도움.",
+    "category": 4
   },
   {
-    "id": 1039,
-    "name": "사과 씨",
-    "ingredient": "청산 배당체",
-    "isOkay": false
+    "id": 52,
+    "name": "생크림",
+    "isOkay": 2,
+    "description": "지방 많아 소량은 괜찮으나 과다 시 설사 유발 가능.",
+    "category": 4
   },
   {
-    "id": 1040,
-    "name": "배 씨",
-    "ingredient": "청산 배당체",
-    "isOkay": false
+    "id": 53,
+    "name": "콜라",
+    "isOkay": 3,
+    "description": "카페인과 설탕 많아 신경 과다, 비만을 유발할 수 있음.",
+    "category": 4
+  },
+
+  {
+    "id": 54,
+    "name": "블루베리",
+    "isOkay": 1,
+    "description": "항산화제가 풍부해 면역력과 눈 건강에 도움.",
+    "category": 1
   },
   {
-    "id": 1041,
-    "name": "은행",
-    "ingredient": "메틸피리독신",
-    "isOkay": false
+    "id": 55,
+    "name": "키위",
+    "isOkay": 2,
+    "description": "비타민 C 많아 면역에 좋으나 껍질 제거하고 소량 급여.",
+    "category": 1
   },
   {
-    "id": 1042,
-    "name": "라임",
-    "ingredient": "광독성 화합물",
-    "isOkay": false
-  },
-  {
-    "id": 1043,
-    "name": "레몬",
-    "ingredient": "광독성 화합물",
-    "isOkay": false
-  },
-  {
-    "id": 1044,
+    "id": 56,
     "name": "자몽",
-    "ingredient": "광독성 화합물",
-    "isOkay": false
+    "isOkay": 2,
+    "description": "비타민 C 풍부하나 산성 강해 소량만 주고 위장 주의.",
+    "category": 1
   },
   {
-    "id": 1045,
-    "name": "오렌지(과다 섭취 시)",
-    "ingredient": "위장 장애 가능",
-    "isOkay": false
-  },
-  {
-    "id": 1046,
+    "id": 57,
     "name": "석류",
-    "ingredient": "탄닌(소화 불량 유발 가능)",
-    "isOkay": false
+    "isOkay": 1,
+    "description": "항산화 성분 많아 심장 건강과 염증 완화에 도움.",
+    "category": 1
   },
   {
-    "id": 1047,
-    "name": "페르시몬(감)",
-    "ingredient": "탄닌(소화 불량 유발 가능)",
-    "isOkay": false
+    "id": 58,
+    "name": "파인애플",
+    "isOkay": 1,
+    "description": "브로멜라인 있어 소화와 면역력 증진에 도움.",
+    "category": 1
+  },
+
+  {
+    "id": 59,
+    "name": "호박",
+    "isOkay": 1,
+    "description": "섬유질과 비타민 A 많아 소화와 눈 건강에 도움.",
+    "category": 2
   },
   {
-    "id": 1048,
-    "name": "날고사리",
-    "ingredient": "티아미나제(비타민 B1 분해)",
-    "isOkay": false
+    "id": 60,
+    "name": "셀러리",
+    "isOkay": 1,
+    "description": "수분과 비타민 K 풍부해 뼈와 수분 보충에 도움.",
+    "category": 2
   },
   {
-    "id": 1049,
-    "name": "날미역",
-    "ingredient": "요오드 과다",
-    "isOkay": false
+    "id": 61,
+    "name": "파프리카",
+    "isOkay": 1,
+    "description": "비타민 C와 항산화제 많아 면역력 증진에 도움.",
+    "category": 2
   },
   {
-    "id": 1050,
-    "name": "날다시마",
-    "ingredient": "요오드 과다",
-    "isOkay": false
-  },
-  { "id": 1051, "name": "후추", "ingredient": "캡사이신", "isOkay": false },
-  {
-    "id": 1052,
-    "name": "겨자",
-    "ingredient": "이소티오시아네이트",
-    "isOkay": false
+    "id": 62,
+    "name": "케일",
+    "isOkay": 2,
+    "description": "비타민 K 풍부하나 과다 섭취 시 신장 결석 주의.",
+    "category": 2
   },
   {
-    "id": 1053,
-    "name": "고추냉이",
-    "ingredient": "이소티오시아네이트",
-    "isOkay": false
+    "id": 63,
+    "name": "콜리플라워",
+    "isOkay": 2,
+    "description": "섬유질 많아 소화에 도움되나 과식 시 가스 주의.",
+    "category": 2
   },
   {
-    "id": 1054,
-    "name": "절인 채소(피클, 김치 등)",
-    "ingredient": "과다 나트륨",
-    "isOkay": false
+    "id": 64,
+    "name": "피망",
+    "isOkay": 1,
+    "description": "비타민 A와 C 많아 눈과 피부 건강에 도움.",
+    "category": 2
   },
   {
-    "id": 1055,
-    "name": "마가린",
-    "ingredient": "트랜스 지방",
-    "isOkay": false
+    "id": 65,
+    "name": "대파",
+    "isOkay": 3,
+    "description": "유황 화합물 있어 적혈구 손상과 빈혈 유발 가능.",
+    "category": 2
+  },
+
+  {
+    "id": 66,
+    "name": "칠면조",
+    "isOkay": 2,
+    "description": "단백질 많아 체력 증진에 도움되나 뼈 제거 필요.",
+    "category": 3
   },
   {
-    "id": 1056,
-    "name": "버터(과다 섭취 시)",
-    "ingredient": "포화 지방 과다",
-    "isOkay": false
+    "id": 67,
+    "name": "양고기",
+    "isOkay": 1,
+    "description": "철분과 단백질 풍부해 빈혈 예방과 근육 강화.",
+    "category": 3
   },
   {
-    "id": 1057,
-    "name": "냉동 반죽 제품",
-    "ingredient": "이스트 발효 문제",
-    "isOkay": false
+    "id": 68,
+    "name": "고등어",
+    "isOkay": 2,
+    "description": "오메가-3 많아 피부 건강에 도움되나 뼈 제거 필요.",
+    "category": 3
   },
   {
-    "id": 1058,
-    "name": "마요네즈",
-    "ingredient": "고지방 및 소화 장애 유발 가능",
-    "isOkay": false
+    "id": 69,
+    "name": "토끼고기",
+    "isOkay": 1,
+    "description": "저지방 단백질로 소화와 근육 유지에 도움.",
+    "category": 3
   },
   {
-    "id": 1059,
-    "name": "핫도그",
-    "ingredient": "고염분 및 방부제",
-    "isOkay": false
+    "id": 70,
+    "name": "멸치",
+    "isOkay": 2,
+    "description": "칼슘 많아 뼈 건강에 도움되나 소량만 급여.",
+    "category": 3
   },
   {
-    "id": 1060,
-    "name": "소시지",
-    "ingredient": "고염분 및 방부제",
-    "isOkay": false
+    "id": 71,
+    "name": "꿩고기",
+    "isOkay": 1,
+    "description": "단백질과 비타민 B 풍부해 에너지와 건강 증진.",
+    "category": 3
   },
   {
-    "id": 1061,
-    "name": "베이컨",
-    "ingredient": "고염분 및 지방 과다",
-    "isOkay": false
+    "id": 72,
+    "name": "오징어",
+    "isOkay": 2,
+    "description": "단백질 많으나 소화 어려워 소량만 급여 필요.",
+    "category": 3
+  },
+
+  {
+    "id": 73,
+    "name": "두부",
+    "isOkay": 1,
+    "description": "식물성 단백질 풍부해 소화와 근육 유지에 도움.",
+    "category": 4
   },
   {
-    "id": 1062,
-    "name": "라면",
-    "ingredient": "과다 나트륨 및 인공 조미료",
-    "isOkay": false
+    "id": 74,
+    "name": "고추",
+    "isOkay": 3,
+    "description": "캡사이신 성분으로 위장 자극과 구토 유발 가능.",
+    "category": 4
   },
   {
-    "id": 1063,
-    "name": "즉석 국수류",
-    "ingredient": "과다 나트륨 및 방부제",
-    "isOkay": false
+    "id": 75,
+    "name": "현미",
+    "isOkay": 1,
+    "description": "섬유질과 비타민 B 많아 소화와 에너지에 도움.",
+    "category": 4
   },
   {
-    "id": 1064,
-    "name": "튀김",
-    "ingredient": "고지방 및 소화 장애",
-    "isOkay": false
+    "id": 76,
+    "name": "망고",
+    "isOkay": 1,
+    "description": "비타민 A와 C 풍부해 피부와 면역력 증진에 도움.",
+    "category": 1
   },
   {
-    "id": 1065,
-    "name": "도넛",
-    "ingredient": "설탕 및 지방 과다",
-    "isOkay": false
+    "id": 77,
+    "name": "레몬",
+    "isOkay": 2,
+    "description": "비타민 C 많아 면역에 좋으나 산성 강해 소량 급여.",
+    "category": 1
   },
   {
-    "id": 1066,
-    "name": "파이",
-    "ingredient": "설탕 및 지방 과다",
-    "isOkay": false
+    "id": 78,
+    "name": "용과",
+    "isOkay": 1,
+    "description": "항산화제와 섬유질 많아 소화와 건강에 도움.",
+    "category": 1
   },
   {
-    "id": 1067,
-    "name": "크림 케이크",
-    "ingredient": "설탕 및 지방 과다",
-    "isOkay": false
+    "id": 79,
+    "name": "리치",
+    "isOkay": 2,
+    "description": "비타민 C 풍부하나 껍질 제거하고 소량만 급여.",
+    "category": 1
   },
   {
-    "id": 1068,
-    "name": "초콜릿 시럽",
-    "ingredient": "테오브로민",
-    "isOkay": false
+    "id": 80,
+    "name": "감",
+    "isOkay": 2,
+    "description": "섬유질 많아 소화에 좋으나 과식 시 설사 주의.",
+    "category": 1
+  },
+
+  {
+    "id": 81,
+    "name": "아스파라거스",
+    "isOkay": 1,
+    "description": "비타민 E와 섬유질 많아 항산화와 소화에 도움.",
+    "category": 2
   },
   {
-    "id": 1069,
-    "name": "카라멜",
-    "ingredient": "설탕 과다",
-    "isOkay": false
+    "id": 82,
+    "name": "비트",
+    "isOkay": 1,
+    "description": "질산염 많아 혈압 조절과 체력 증진에 도움.",
+    "category": 2
   },
   {
-    "id": 1070,
-    "name": "젤리",
-    "ingredient": "인공 감미료 및 설탕 과다",
-    "isOkay": false
+    "id": 83,
+    "name": "상추",
+    "isOkay": 1,
+    "description": "수분과 비타민 K 많아 뼈 건강과 수분 보충에 도움.",
+    "category": 2
   },
   {
-    "id": 1071,
-    "name": "팝콘(버터 첨가된 것)",
-    "ingredient": "소화 장애 및 고염분",
-    "isOkay": false
+    "id": 84,
+    "name": "가지",
+    "isOkay": 1,
+    "description": "항산화제 많아 심장 건강과 염증 완화에 도움.",
+    "category": 2
   },
   {
-    "id": 1072,
-    "name": "치즈볼",
-    "ingredient": "고염분 및 인공 조미료",
-    "isOkay": false
+    "id": 85,
+    "name": "부추",
+    "isOkay": 3,
+    "description": "유황 화합물 있어 적혈구 손상과 빈혈 유발 가능.",
+    "category": 2
+  },
+  {
+    "id": 86,
+    "name": "무",
+    "isOkay": 1,
+    "description": "섬유질과 비타민 C 많아 소화와 면역력에 도움.",
+    "category": 2
+  },
+  {
+    "id": 87,
+    "name": "쑥갓",
+    "isOkay": 1,
+    "description": "비타민 A 풍부해 눈 건강과 피부에 도움.",
+    "category": 2
+  },
+
+  {
+    "id": 88,
+    "name": "꽁치",
+    "isOkay": 2,
+    "description": "오메가-3 많아 심장에 좋으나 뼈 제거하고 소량 급여.",
+    "category": 3
+  },
+  {
+    "id": 89,
+    "name": "염소고기",
+    "isOkay": 1,
+    "description": "저지방 단백질로 근육 유지와 체력 증진에 도움.",
+    "category": 3
+  },
+  {
+    "id": 90,
+    "name": "문어",
+    "isOkay": 2,
+    "description": "단백질 풍부하나 소화 어려워 소량만 급여 필요.",
+    "category": 3
+  },
+  {
+    "id": 91,
+    "name": "새우",
+    "isOkay": 2,
+    "description": "단백질과 오메가-3 많으나 껍질 제거하고 익혀 급여.",
+    "category": 3
+  },
+  {
+    "id": 92,
+    "name": "게살",
+    "isOkay": 2,
+    "description": "단백질 풍부하나 나트륨 많아 소량만 급여 필요.",
+    "category": 3
+  },
+  {
+    "id": 93,
+    "name": "홍합",
+    "isOkay": 2,
+    "description": "철분과 오메가-3 많으나 조개 알레르기 주의.",
+    "category": 3
+  },
+  {
+    "id": 94,
+    "name": "말고기",
+    "isOkay": 1,
+    "description": "철분과 단백질 많아 빈혈 예방과 체력 강화.",
+    "category": 3
+  },
+  {
+    "id": 95,
+    "name": "전복",
+    "isOkay": 1,
+    "description": "단백질과 비타민 풍부해 체력과 면역력 증진.",
+    "category": 3
+  },
+
+  {
+    "id": 96,
+    "name": "된장",
+    "isOkay": 2,
+    "description": "단백질과 프로바이오틱스 풍부하나 소금 많아 소량 급여.",
+    "category": 4
+  },
+  {
+    "id": 97,
+    "name": "간장",
+    "isOkay": 3,
+    "description": "나트륨 과다로 신부전과 고혈압 유발 가능.",
+    "category": 4
+  },
+  {
+    "id": 98,
+    "name": "배",
+    "isOkay": 1,
+    "description": "섬유질과 비타민 K 많아 소화와 뼈 건강에 도움.",
+    "category": 1
+  },
+  {
+    "id": 99,
+    "name": "멜론",
+    "isOkay": 1,
+    "description": "수분과 비타민 C 풍부해 수분 보충과 면역력 증진.",
+    "category": 1
+  },
+  {
+    "id": 100,
+    "name": "구아바",
+    "isOkay": 1,
+    "description": "비타민 C 많아 항산화와 면역력 강화에 도움.",
+    "category": 1
+  },
+  {
+    "id": 101,
+    "name": "산딸기",
+    "isOkay": 1,
+    "description": "항산화제 풍부해 염증 완화와 건강 증진에 도움.",
+    "category": 1
+  },
+  {
+    "id": 102,
+    "name": "여주",
+    "isOkay": 2,
+    "description": "비타민 C 많아 면역에 좋으나 쓴맛으로 소량 급여.",
+    "category": 1
+  },
+
+  {
+    "id": 103,
+    "name": "양배추",
+    "isOkay": 1,
+    "description": "비타민 K와 C 많아 뼈 건강과 면역력에 도움.",
+    "category": 2
+  },
+  {
+    "id": 104,
+    "name": "미나리",
+    "isOkay": 1,
+    "description": "철분과 비타민 풍부해 빈혈 예방과 체력 증진.",
+    "category": 2
+  },
+  {
+    "id": 105,
+    "name": "죽순",
+    "isOkay": 2,
+    "description": "섬유질 많아 소화에 좋으나 과식 시 위장 장애 주의.",
+    "category": 2
+  },
+  {
+    "id": 106,
+    "name": "샐러드채소",
+    "isOkay": 1,
+    "description": "수분과 비타민 많아 수분 보충과 건강에 도움.",
+    "category": 2
+  },
+  {
+    "id": 107,
+    "name": "열무",
+    "isOkay": 1,
+    "description": "비타민 C 풍부해 면역력과 피부 건강에 도움.",
+    "category": 2
+  },
+  {
+    "id": 108,
+    "name": "근대",
+    "isOkay": 1,
+    "description": "철분과 칼슘 많아 뼈와 혈액 건강에 도움.",
+    "category": 2
+  },
+  {
+    "id": 109,
+    "name": "옥수수수염",
+    "isOkay": 1,
+    "description": "항산화 성분 많아 염증 완화와 건강에 도움.",
+    "category": 2
+  },
+
+  {
+    "id": 110,
+    "name": "메기",
+    "isOkay": 2,
+    "description": "단백질 풍부하나 뼈 제거하고 익혀 소량 급여.",
+    "category": 3
+  },
+  {
+    "id": 111,
+    "name": "광어",
+    "isOkay": 1,
+    "description": "저지방 단백질로 소화와 근육 유지에 도움.",
+    "category": 3
+  },
+  {
+    "id": 112,
+    "name": "조기",
+    "isOkay": 2,
+    "description": "오메가-3 많아 심장에 좋으나 뼈 제거 필요.",
+    "category": 3
+  },
+  {
+    "id": 113,
+    "name": "굴",
+    "isOkay": 2,
+    "description": "아연과 단백질 많으나 알레르기 주의하고 소량 급여.",
+    "category": 3
+  },
+  {
+    "id": 114,
+    "name": "갈치",
+    "isOkay": 2,
+    "description": "단백질과 오메가-3 풍부하나 뼈 제거하고 급여.",
+    "category": 3
+  },
+  {
+    "id": 115,
+    "name": "장어",
+    "isOkay": 2,
+    "description": "비타민 A 많아 눈 건강에 도움되나 지방 주의.",
+    "category": 3
+  },
+  {
+    "id": 116,
+    "name": "농어",
+    "isOkay": 1,
+    "description": "단백질과 오메가-3 많아 근육과 심장 건강에 도움.",
+    "category": 3
+  },
+  {
+    "id": 117,
+    "name": "숭어",
+    "isOkay": 1,
+    "description": "저지방 단백질로 체력 증진과 소화에 도움.",
+    "category": 3
+  },
+
+  {
+    "id": 118,
+    "name": "미역",
+    "isOkay": 1,
+    "description": "요오드와 섬유질 많아 갑상선과 소화에 도움.",
+    "category": 4
+  },
+  {
+    "id": 119,
+    "name": "김",
+    "isOkay": 1,
+    "description": "비타민과 미네랄 풍부해 건강 증진에 도움.",
+    "category": 4
+  },
+  {
+    "id": 120,
+    "name": "귤",
+    "isOkay": 1,
+    "description": "비타민 C 풍부해 면역력과 피부 건강에 도움.",
+    "category": 1
+  },
+  {
+    "id": 121,
+    "name": "파파야",
+    "isOkay": 1,
+    "description": "파파인 효소로 소화와 항산화에 도움.",
+    "category": 1
+  },
+  {
+    "id": 122,
+    "name": "라임",
+    "isOkay": 2,
+    "description": "비타민 C 많아 면역에 좋으나 산성 강해 소량만.",
+    "category": 1
+  },
+  {
+    "id": 123,
+    "name": "크랜베리",
+    "isOkay": 1,
+    "description": "항산화제 많아 요로 건강과 면역력에 도움.",
+    "category": 1
+  },
+  {
+    "id": 124,
+    "name": "무화과",
+    "isOkay": 1,
+    "description": "섬유질과 칼륨 많아 소화와 심장 건강에 도움.",
+    "category": 1
+  },
+  {
+    "id": 125,
+    "name": "패션프루트",
+    "isOkay": 1,
+    "description": "비타민 C와 섬유질 많아 면역과 소화에 도움.",
+    "category": 1
+  },
+
+  {
+    "id": 126,
+    "name": "적양배추",
+    "isOkay": 1,
+    "description": "항산화제 많아 염증 완화와 면역력에 도움.",
+    "category": 2
+  },
+  {
+    "id": 127,
+    "name": "애호박",
+    "isOkay": 1,
+    "description": "비타민 A 풍부해 눈 건강과 소화에 도움.",
+    "category": 2
+  },
+  {
+    "id": 128,
+    "name": "돌나물",
+    "isOkay": 1,
+    "description": "수분과 비타민 많아 수분 보충과 건강 증진.",
+    "category": 2
+  },
+  {
+    "id": 129,
+    "name": "우엉",
+    "isOkay": 1,
+    "description": "섬유질 많아 소화와 장 건강에 도움.",
+    "category": 2
+  },
+  {
+    "id": 130,
+    "name": "연근",
+    "isOkay": 1,
+    "description": "비타민 C와 섬유질 많아 면역과 소화에 도움.",
+    "category": 2
+  },
+  {
+    "id": 131,
+    "name": "파슬리",
+    "isOkay": 1,
+    "description": "비타민 K 많아 뼈 건강과 항산화에 도움.",
+    "category": 2
+  },
+  {
+    "id": 132,
+    "name": "고수",
+    "isOkay": 1,
+    "description": "항산화 성분 많아 염증 완화와 건강 증진.",
+    "category": 2
+  },
+  {
+    "id": 133,
+    "name": "순무",
+    "isOkay": 1,
+    "description": "섬유질과 비타민 C 많아 소화와 면역력 증진.",
+    "category": 2
+  },
+
+  {
+    "id": 134,
+    "name": "도미",
+    "isOkay": 1,
+    "description": "단백질과 오메가-3 많아 심장과 근육 건강에 도움.",
+    "category": 3
+  },
+  {
+    "id": 135,
+    "name": "대구",
+    "isOkay": 1,
+    "description": "저지방 단백질로 소화와 체력 증진에 도움.",
+    "category": 3
+  },
+  {
+    "id": 136,
+    "name": "아귀",
+    "isOkay": 2,
+    "description": "단백질 많으나 뼈 제거하고 익혀 소량 급여.",
+    "category": 3
+  },
+  {
+    "id": 137,
+    "name": "임연수",
+    "isOkay": 2,
+    "description": "오메가-3 많아 피부에 좋으나 뼈 제거 필요.",
+    "category": 3
+  },
+  {
+    "id": 138,
+    "name": "붕어",
+    "isOkay": 1,
+    "description": "단백질과 비타민 많아 체력과 건강 증진.",
+    "category": 3
+  },
+  {
+    "id": 139,
+    "name": "가자미",
+    "isOkay": 1,
+    "description": "저지방 단백질로 근육 유지와 소화에 도움.",
+    "category": 3
+  },
+  {
+    "id": 140,
+    "name": "멸치",
+    "isOkay": 2,
+    "description": "칼슘 많아 뼈 건강에 도움되나 소량만 급여.",
+    "category": 3
+  },
+  {
+    "id": 141,
+    "name": "병어",
+    "isOkay": 1,
+    "description": "단백질과 오메가-3 많아 심장 건강에 도움.",
+    "category": 3
+  },
+  {
+    "id": 142,
+    "name": "모과",
+    "isOkay": 3,
+    "description": "타닌 성분 많아 소화 장애와 구토 유발 가능.",
+    "category": 1
+  },
+  {
+    "id": 143,
+    "name": "앵두",
+    "isOkay": 3,
+    "description": "씨에 시안화물 있어 중독과 호흡 곤란 유발.",
+    "category": 1
+  },
+  {
+    "id": 144,
+    "name": "살구",
+    "isOkay": 3,
+    "description": "씨에 아미그달린 있어 시안화물 중독 위험.",
+    "category": 1
+  },
+  {
+    "id": 145,
+    "name": "대추야자",
+    "isOkay": 2,
+    "description": "섬유질 많아 소화에 도움되나 과식 시 장폐색 주의.",
+    "category": 1
+  },
+  {
+    "id": 146,
+    "name": "스타프루트",
+    "isOkay": 3,
+    "description": "옥살산 많아 신부전과 경련 유발 가능.",
+    "category": 1
+  },
+
+  {
+    "id": 147,
+    "name": "완두콩",
+    "isOkay": 2,
+    "description": "단백질 풍부하나 날것은 소화 불량 주의.",
+    "category": 2
+  },
+  {
+    "id": 148,
+    "name": "강낭콩",
+    "isOkay": 3,
+    "description": "렉틴 성분 있어 구토와 설사 유발 가능.",
+    "category": 2
+  },
+  {
+    "id": 149,
+    "name": "고사리",
+    "isOkay": 3,
+    "description": "프타퀼로사이드로 암과 중독 증상 유발.",
+    "category": 2
+  },
+  {
+    "id": 150,
+    "name": "토란",
+    "isOkay": 3,
+    "description": "옥살산 칼슘 있어 소화 장애와 신장 손상.",
+    "category": 2
+  },
+  {
+    "id": 152,
+    "name": "취나물",
+    "isOkay": 3,
+    "description": "알칼로이드 있어 신경 장애와 구토 유발.",
+    "category": 2
+  },
+  {
+    "id": 153,
+    "name": "머위",
+    "isOkay": 3,
+    "description": "피롤리지딘 독성으로 간 손상 유발 가능.",
+    "category": 2
+  },
+  {
+    "id": 154,
+    "name": "더덕",
+    "isOkay": 1,
+    "description": "사포닌 많아 면역력과 체력 증진에 도움.",
+    "category": 2
+  },
+
+  {
+    "id": 155,
+    "name": "곰고기",
+    "isOkay": 3,
+    "description": "기생충 많아 회충 감염과 소화 장애 유발.",
+    "category": 3
+  },
+  {
+    "id": 157,
+    "name": "복어",
+    "isOkay": 3,
+    "description": "테트로도톡신 있어 신경 마비와 사망 위험.",
+    "category": 3
+  },
+  {
+    "id": 158,
+    "name": "쥐치",
+    "isOkay": 3,
+    "description": "독소 있어 구토와 신경 장애 유발 가능.",
+    "category": 3
+  },
+  {
+    "id": 159,
+    "name": "뱀장어",
+    "isOkay": 3,
+    "description": "혈액 독소로 구토와 심장 문제 유발 가능.",
+    "category": 3
+  },
+  {
+    "id": 160,
+    "name": "해파리",
+    "isOkay": 3,
+    "description": "독성 있어 소화 장애와 알레르기 유발.",
+    "category": 3
+  },
+  {
+    "id": 161,
+    "name": "성게",
+    "isOkay": 2,
+    "description": "단백질 많으나 독침 제거하고 소량 급여.",
+    "category": 3
+  },
+  {
+    "id": 162,
+    "name": "미꾸라지",
+    "isOkay": 1,
+    "description": "단백질과 칼슘 많아 체력과 뼈 건강에 도움.",
+    "category": 3
   }
 ]

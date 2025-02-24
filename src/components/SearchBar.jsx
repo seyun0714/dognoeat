@@ -91,6 +91,17 @@ export default function SearchBar({ type, query }) {
     }, 100);
   };
 
+  const getStatusClassName = (isOkay) => {
+    const baseClass = "search-suggestion";
+    const statusClass = {
+      1: "safe",
+      2: "warning",
+      3: "danger",
+    }[isOkay];
+
+    return `${baseClass} ${statusClass}`;
+  };
+
   return (
     <div className={`search-wrapper ${type}`}>
       <div
@@ -161,11 +172,7 @@ export default function SearchBar({ type, query }) {
               <li
                 key={suggestion.id}
                 onClick={(e) => handleSuggestionClick(e, suggestion)}
-                className={
-                  suggestion.isOkay
-                    ? "search-suggestion yes"
-                    : "search-suggestion no"
-                }
+                className={getStatusClassName(suggestion.isOkay)}
               >
                 <span>{suggestion.name}</span>
               </li>

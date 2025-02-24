@@ -138,12 +138,16 @@
   font-weight: 300;
 }
 
-.search-suggestion.yes {
-  background-color: lightgreen;
+.search-suggestion.safe {
+  background-color: seagreen;
 }
 
-.search-suggestion.no {
-  background-color: lightcoral;
+.search-suggestion.warning {
+  background-color: sandybrown;
+}
+
+.search-suggestion.danger {
+  background-color: crimson;
 }
 
 .search-suggestion:hover {
