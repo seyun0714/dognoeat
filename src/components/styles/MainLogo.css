@@ -10,8 +10,8 @@
   background-color: lightcoral;
   /* background-image: url("../../assets/logo.png"); */
   background-size: 250px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .main-title {
@@ -33,9 +33,9 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .main-logo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 }

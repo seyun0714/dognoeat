@@ -966,13 +966,6 @@
     "category": 3
   },
   {
-    "id": 140,
-    "name": "멸치",
-    "isOkay": 2,
-    "description": "칼슘 많아 뼈 건강에 도움되나 소량만 급여.",
-    "category": 3
-  },
-  {
     "id": 141,
     "name": "병어",
     "isOkay": 1,
