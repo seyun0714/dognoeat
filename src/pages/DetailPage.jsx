@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SearchBar from "../components/SearchBar";
-import foodData from "../database/dognoeat.json";
+import foodData from "@data/dognoeat.js";
+import NotFound from "../components/NotFound";
 import { useSearchParams } from "react-router-dom";
 import Card from "../components/Card";
 
@@ -37,16 +38,20 @@ export default function DetailPage() {
       <Header></Header>
       <div className="detail-content-wrapper">
         <SearchBar type={"detail"} query={query}></SearchBar>
-        <div className="detail-search-list">
-          {filteredData.map((item) => (
-            <Card
-              title={item.name}
-              description={item.description}
-              isOkay={item.isOkay}
-              key={item.id}
-            ></Card>
-          ))}
-        </div>
+        {filteredData.length === 0 ? (
+          <NotFound query={query}></NotFound>
+        ) : (
+          <div className="detail-search-list">
+            {filteredData.map((item) => (
+              <Card
+                title={item.name}
+                description={item.description}
+                isOkay={item.isOkay}
+                key={item.id}
+              ></Card>
+            ))}
+          </div>
+        )}
       </div>
       <Footer></Footer>
     </div>

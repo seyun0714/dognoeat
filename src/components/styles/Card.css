@@ -10,16 +10,16 @@
   margin: 10px;
 }
 
-.card-wrapper.yes {
+.card-wrapper.safe {
   outline: 10px solid seagreen;
 }
 
-.card-wrapper.caution {
+.card-wrapper.warning {
   outline: 10px solid sandybrown;
 }
 
-.card-wrapper.no {
-  outline: 10px solid crimson;
+.card-wrapper.danger {
+  outline: 10px solid red;
 }
 
 .card-text-title {

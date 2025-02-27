@@ -2,18 +2,11 @@ import React from "react";
 import "./styles/Card.css";
 
 export default function Card({ title, description, isOkay }) {
-  let cardColor = "";
-  switch (isOkay) {
-    case 1:
-      cardColor = "yes";
-      break;
-    case 2:
-      cardColor = "caution";
-      break;
-    case 3:
-      cardColor = "no";
-      break;
-  }
+  const cardColor = {
+    1: "safe",
+    2: "warning",
+    3: "danger",
+  }[isOkay];
 
   return (
     <div className={`card-wrapper ${cardColor}`}>

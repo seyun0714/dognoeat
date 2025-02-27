@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./styles/SearchBar.css";
-import foodData from "../database/dognoeat.json";
+import foodData from "@data/dognoeat.js";
 import { useNavigate } from "react-router-dom";
 
 export default function SearchBar({ type, query }) {

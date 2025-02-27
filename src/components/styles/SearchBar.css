@@ -75,8 +75,8 @@
   position: absolute;
   width: fit-content;
   right: 0;
-  padding: 5px 15px 5px 15px;
-  gap: 10px;
+  padding: 5px 8px 5px 15px;
+  gap: 5px;
 }
 
 .search-bar-input-reset {
@@ -147,7 +147,7 @@
 }
 
 .search-suggestion.danger {
-  background-color: crimson;
+  background-color: red;
 }
 
 .search-suggestion:hover {
