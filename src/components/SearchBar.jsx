@@ -82,7 +82,7 @@ export default function SearchBar({ type, query }) {
 
   const handleSuggestionClick = (e, suggestValue) => {
     e.stopPropagation();
-    navigate(`/detail/?query=${inputValue.toString()}`);
+    navigate(`/detail/?query=${suggestValue.name.toString()}`);
   };
 
   const handleBlur = () => {

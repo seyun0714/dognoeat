@@ -7,35 +7,25 @@
 }
 
 .main-logo {
-  background-color: lightcoral;
-  /* background-image: url("../../assets/logo.png"); */
-  background-size: 250px;
-  width: 150px;
-  height: 150px;
-}
-
-.main-title {
-  margin-top: 10px;
-  font-size: 3rem;
-  font-weight: bold;
-
-  text-overflow: clip;
-  white-space: nowrap;
+  width: 200px;
+  height: 200px;
+  background-image: url("@assets/logo2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main-description {
   text-align: center;
-  font-size: 1rem;
-  color: rgb(68, 68, 68);
-  font-weight: 300;
-  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #777777;
+  font-weight: 600;
   text-overflow: clip;
   white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) {
   .main-logo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 }

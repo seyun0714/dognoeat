@@ -6,8 +6,8 @@ export default function Footer() {
     <footer>
       <div className="footer-wrapper">
         <div className="footer-email-wrapper">
-          <a href="mailto:seyun@gmail.com" className="footer-email">
-            seyun0714@gmail.com
+          <a href="mailto:dognoeat0@gmail.com" className="footer-email">
+            dognoeat0@gmail.com
           </a>
         </div>
         <div className="footer-copyright">

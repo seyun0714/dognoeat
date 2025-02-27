@@ -26,6 +26,7 @@
   height: 60px;
   border: 1px solid gray;
   border-radius: 20px;
+  background-color: #faf9f6;
 }
 
 .search-bar-wrapper.home {
@@ -60,7 +61,10 @@
   margin-left: 20px;
   margin-right: 100px;
   font-size: 1rem;
+  font-weight: bold;
   padding: 0;
+  background-color: #faf9f6;
+  color: #424242;
 }
 
 .search-bar-input:focus {
@@ -129,28 +133,30 @@
   font-size: 1rem;
   position: absolute;
   top: 100%;
+  z-index: 10;
 }
 
 .search-suggestion {
   cursor: pointer;
   pointer-events: auto;
   padding: 5px 5px 5px 25px;
-  font-weight: 300;
+  font-weight: 600;
+  color: #424242;
 }
 
 .search-suggestion.safe {
-  background-color: seagreen;
+  background-color: #8bc34a;
 }
 
 .search-suggestion.warning {
-  background-color: sandybrown;
+  background-color: #ffd54f;
 }
 
 .search-suggestion.danger {
-  background-color: red;
+  background-color: #ef5350;
 }
 
 .search-suggestion:hover {
   text-decoration: underline;
-  font-weight: 500;
+  font-weight: 600;
 }

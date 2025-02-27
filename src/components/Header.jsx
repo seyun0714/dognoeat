@@ -7,7 +7,6 @@ export default function Header() {
       <header>
         <a href="/">
           <div className="header-image"></div>
-          <span className="header-title"></span>
         </a>
       </header>
     </>
