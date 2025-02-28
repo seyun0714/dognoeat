@@ -21,7 +21,6 @@ export default function SearchBar({ type, query }) {
   const handleInputChange = (e) => {
     const value = e.target.value;
     setInputValue(value);
-    //console.log(value);
     setSelectedIndex(-1);
 
     if (value.trim() === "") {
@@ -57,7 +56,6 @@ export default function SearchBar({ type, query }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(inputValue);
     navigate(`/detail/?query=${inputValue.toString()}`);
   };
 
@@ -82,6 +80,7 @@ export default function SearchBar({ type, query }) {
 
   const handleSuggestionClick = (e, suggestValue) => {
     e.stopPropagation();
+    setInputValue(suggestValue.name.toString());
     navigate(`/detail/?query=${suggestValue.name.toString()}`);
   };
 
@@ -171,7 +170,7 @@ export default function SearchBar({ type, query }) {
             {suggestion.map((suggestion) => (
               <li
                 key={suggestion.id}
-                onClick={(e) => handleSuggestionClick(e, suggestion)}
+                onMouseDown={(e) => handleSuggestionClick(e, suggestion)}
                 className={getStatusClassName(suggestion.isOkay)}
               >
                 <span>{suggestion.name}</span>
