@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./styles/SearchBar.css";
 import foodData from "@data/dognoeat.js";
 import { useNavigate } from "react-router-dom";
@@ -11,10 +11,6 @@ export default function SearchBar({ type, query }) {
   const [isOpen, setIsOpen] = useState(false);
   const [data] = useState(foodData);
   const inputRef = useRef(null);
-
-  useEffect(() => {
-    inputRef.current.focus();
-  }, []);
 
   const handleClickReset = (e) => {
     e.preventDefault();
