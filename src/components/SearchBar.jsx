@@ -60,12 +60,10 @@ export default function SearchBar({ type, query }) {
   };
 
   const handleKeyDown = (e) => {
-    alert(`e.code : ${e.code}, e.key : ${e.key}`);
-
     if (inputValue === "") {
       return;
     }
-    if (e.code === "Enter") {
+    if (e.code === "Enter" || e.key === "Enter") {
       e.preventDefault();
       setIsOpen(false);
       navigate(`/detail/?query=${inputValue.toString()}`);
