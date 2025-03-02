@@ -10,12 +10,18 @@ export default function SearchBar({ type, query }) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [isOpen, setIsOpen] = useState(false);
   const [data] = useState(foodData);
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   const handleClickReset = (e) => {
     e.preventDefault();
     setInputValue("");
     setSuggestion([]);
     setIsOpen(false);
+    inputRef.current.focus();
   };
 
   const handleInputChange = (e) => {
@@ -114,6 +120,7 @@ export default function SearchBar({ type, query }) {
           <input
             className="search-bar-input"
             value={inputValue}
+            ref={inputRef}
             type="text"
             placeholder="검색어를 입력하세요"
             onChange={handleInputChange}
@@ -129,6 +136,7 @@ export default function SearchBar({ type, query }) {
                   : "search-bar-input-reset hidden"
               }
               onClick={handleClickReset}
+              aria-label="입력 초기화"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +153,11 @@ export default function SearchBar({ type, query }) {
                 />
               </svg>
             </button>
-            <button className="search-bar-button" type="submit">
+            <button
+              className="search-bar-button"
+              type="submit"
+              aria-label="검색"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
