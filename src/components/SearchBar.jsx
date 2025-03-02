@@ -60,6 +60,8 @@ export default function SearchBar({ type, query }) {
   };
 
   const handleKeyDown = (e) => {
+    alert(`e.code : ${e.code}, e.key : ${e.key}`);
+
     if (inputValue === "") {
       return;
     }
