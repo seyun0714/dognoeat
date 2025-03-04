@@ -8,29 +8,29 @@ footer {
   background-color: #e0e0e0;
 }
 
-.footer-email-wrapper {
+.footer-go-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2px;
+  gap: 20px;
 }
 
-.footer-email {
+.footer-email,
+.footer-privacy-policy,
+.footer-copyright {
+  text-align: center;
   color: #424242;
   text-decoration: none;
   font-size: 0.7rem;
   font-weight: 600;
   text-overflow: clip;
   white-space: nowrap;
+  padding: 2px;
 }
 
-.footer-copyright {
-  color: #424242;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-overflow: clip;
-  white-space: nowrap;
-  padding: 2px;
+.footer-privacy-policy:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {

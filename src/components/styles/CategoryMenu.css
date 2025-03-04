@@ -1,0 +1,33 @@
+.category-menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.category-menu-wrapper.active {
+  background-color: #424242;
+}
+
+.category-menu-wrapper:hover {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.category-menu-go {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.category-menu-go > span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+}

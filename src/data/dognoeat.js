@@ -258,7 +258,7 @@ export const foodData = [
     name: "옥수수",
     isOkay: 1,
     description: "섬유질과 에너지를 제공해 소화와 활력에 도움.",
-    category: 4,
+    category: 2,
   },
   {
     id: 29,
@@ -286,7 +286,7 @@ export const foodData = [
     name: "감자",
     isOkay: 2,
     description: "비타민 C와 탄수화물 풍부하나 날것은 소화 불량 주의.",
-    category: 4,
+    category: 2,
   },
   {
     id: 33,
@@ -503,7 +503,7 @@ export const foodData = [
     name: "고추",
     isOkay: 3,
     description: "캡사이신 성분으로 위장 자극과 구토 유발 가능.",
-    category: 4,
+    category: 2,
   },
   {
     id: 75,
@@ -704,7 +704,7 @@ export const foodData = [
     name: "여주",
     isOkay: 3,
     description: "소화 불량 및 마비 증상 유발.",
-    category: 1,
+    category: 2,
   },
   {
     id: 103,
@@ -746,8 +746,7 @@ export const foodData = [
     id: 109,
     name: "옥수수수염",
     isOkay: 2,
-    description:
-      "가능 하나 신장과 심장 건강에 영향을 줄 수 있으므로 주의 필요.",
+    description: "가능하나 신장과 심장 건강에 영향을 줄 수 있으므로 주의 필요.",
     category: 2,
   },
   {
@@ -806,7 +805,6 @@ export const foodData = [
     description: "가능하나 가시가 많기 때문에 되도록 급여 자제",
     category: 3,
   },
-
   {
     id: 118,
     name: "미역",

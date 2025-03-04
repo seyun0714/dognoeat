@@ -4,6 +4,8 @@ import "./index.css";
 import Layout from "./components/Layout.jsx";
 import MainPage from "./pages/MainPage.jsx";
 import DetailPage from "./pages/DetailPage.jsx";
+import CategoryPage from "./pages/CategoryPage.jsx";
+import PolicyPage from "./pages/PolicyPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path: "/detail",
         element: <DetailPage />,
+      },
+      {
+        path: "/category",
+        element: <CategoryPage />,
+      },
+      {
+        path: "/policy",
+        element: <PolicyPage />,
       },
     ],
   },
