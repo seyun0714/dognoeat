@@ -32,16 +32,20 @@ export default function CategoryPage() {
           <CategoryMenu id={3} isActive={categoryid === "3"}></CategoryMenu>
           <CategoryMenu id={4} isActive={categoryid === "4"}></CategoryMenu>
         </div>
-        <div className="category-search-list">
-          {filteredData.map((item) => (
-            <Card
-              title={item.name}
-              description={item.description}
-              isOkay={item.isOkay}
-              key={item.id}
-            ></Card>
-          ))}
-        </div>
+        {filteredData.length === 0 ? (
+          <NotFound query={categoryid} type={"category"}></NotFound>
+        ) : (
+          <div className="category-search-list">
+            {filteredData.map((item) => (
+              <Card
+                title={item.name}
+                description={item.description}
+                isOkay={item.isOkay}
+                key={item.id}
+              ></Card>
+            ))}
+          </div>
+        )}
       </div>
       <Footer></Footer>
     </div>

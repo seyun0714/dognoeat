@@ -39,7 +39,7 @@ export default function DetailPage() {
       <div className="detail-content-wrapper">
         <SearchBar type={"detail"} query={query}></SearchBar>
         {filteredData.length === 0 ? (
-          <NotFound query={query}></NotFound>
+          <NotFound query={query} type={"search"}></NotFound>
         ) : (
           <div className="detail-search-list">
             {filteredData.map((item) => (

@@ -1,5 +1,9 @@
 import { createRoot } from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  Navigate,
+} from "react-router-dom";
 import "./index.css";
 import Layout from "./components/Layout.jsx";
 import MainPage from "./pages/MainPage.jsx";
@@ -27,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/policy",
         element: <PolicyPage />,
+      },
+      {
+        path: "*",
+        element: <Navigate to="/" replace />,
       },
     ],
   },
