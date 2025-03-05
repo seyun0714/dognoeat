@@ -10,6 +10,7 @@ import MainPage from "./pages/MainPage.jsx";
 import DetailPage from "./pages/DetailPage.jsx";
 import CategoryPage from "./pages/CategoryPage.jsx";
 import PolicyPage from "./pages/PolicyPage.jsx";
+import "./styles/variables.css";
 
 const router = createBrowserRouter([
   {

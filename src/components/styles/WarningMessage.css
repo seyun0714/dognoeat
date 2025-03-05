@@ -9,11 +9,11 @@
   margin-top: 20px;
   padding: 15px 20px;
 
-  border: 1px solid #ff9800;
+  border: 1px solid var(--color-yellow-500);
   border-radius: 10px;
 
-  background-color: #fff3e0;
-  color: #424242;
+  background-color: var(--color-yellow-100);
+  color: var(--color-font-dark);
   font-size: 0.8rem;
   font-weight: 600;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);

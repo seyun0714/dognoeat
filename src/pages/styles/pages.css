@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 100vh;
   overflow-y: auto;
-  background-color: #faf9f6;
+  background-color: var(--color-background);
 }
 
 .main-content-wrapper,

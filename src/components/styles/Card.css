@@ -9,23 +9,23 @@
   background-clip: border-box;
   margin: 10px;
   position: relative;
-  color: #424242;
+  color: var(--color-primary);
 }
 
 .card-wrapper:hover {
-  background-color: #ecebe7;
+  background-color: var(--color-background);
 }
 
 .card-wrapper.safe {
-  outline: 10px solid #8bc34a;
+  outline: 10px solid var(--color-safe);
 }
 
 .card-wrapper.warning {
-  outline: 10px solid #ffd54f;
+  outline: 10px solid var(--color-warning);
 }
 
 .card-wrapper.danger {
-  outline: 10px solid #ef5350;
+  outline: 10px solid var(--color-danger);
 }
 
 .card-text-top {
@@ -38,13 +38,13 @@
 .card-text-title {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #424242;
+  color: var(--color-font-dark);
 }
 
 .card-border {
   width: 100%;
   height: 2px;
-  background-color: #424242;
+  background-color: var(--color-primary);
 }
 
 .card-text-bottom {
@@ -54,5 +54,5 @@
 .card-text-description {
   font-size: 1rem;
   font-weight: 600;
-  color: #777777;
+  color: var(--color-font-gray);
 }

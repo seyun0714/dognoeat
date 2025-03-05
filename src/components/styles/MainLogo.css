@@ -17,7 +17,7 @@
 .main-description {
   text-align: center;
   font-size: 0.9rem;
-  color: #777777;
+  color: var(--color-font-gray);
   font-weight: 600;
   text-overflow: clip;
   white-space: nowrap;

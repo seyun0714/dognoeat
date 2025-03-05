@@ -5,7 +5,7 @@ footer {
   justify-content: center;
   width: 100%;
   height: 50px;
-  background-color: #e0e0e0;
+  background-color: var(--color-primary-300);
 }
 
 .footer-go-wrapper {
@@ -20,7 +20,7 @@ footer {
 .footer-privacy-policy,
 .footer-copyright {
   text-align: center;
-  color: #424242;
+  color: var(--color-font-dark);
   text-decoration: none;
   font-size: 0.7rem;
   font-weight: 600;

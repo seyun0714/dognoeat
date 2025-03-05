@@ -18,11 +18,12 @@
   box-sizing: border-box;
   background-clip: border-box;
   margin: 10px;
-  outline: 10px solid #424242;
+  outline: 10px solid var(--color-primary);
   border-radius: 10px;
 }
 
 .notfound-text {
+  color: var(--color-font-dark);
   padding: 20px;
   font-size: 1.3rem;
   font-weight: bold;

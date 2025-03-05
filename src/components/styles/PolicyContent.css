@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  color: #424242;
+  color: var(--color-primary);
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 20px;
@@ -16,7 +16,7 @@
   margin: 25px 0 20px 0;
 
   border-radius: 10px;
-  outline: 10px solid #424242;
+  outline: 10px solid var(--color-primary);
   box-sizing: border-box;
   background-clip: border-box;
 }
@@ -25,19 +25,19 @@
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
-  color: black;
+  color: var(--color-font-dark);
 }
 
 .policy-detail-content-wrapper h2 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 10px;
-  color: black;
+  color: var(--color-font-dark);
 }
 
 .policy-detail-content-wrapper a {
   text-decoration: underline;
-  color: #424242;
+  color: var(--color-font-dark);
 }
 
 .policy-detail-content-wrapper a:hover {
