@@ -1,6 +1,2 @@
-User-agent: Yeti
-Allow: /
-User-agent: NaverBot
-Allow: /
 User-agent: *
 Allow: /
