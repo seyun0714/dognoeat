@@ -33,6 +33,7 @@ const router = createBrowserRouter([
         path: "/policy",
         element: <PolicyPage />,
       },
+
       // {
       //   path: "*",
       //   element: <Navigate to="/" replace />,
