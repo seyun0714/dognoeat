@@ -4,7 +4,7 @@ export const foodData = [
     name: "사과",
     isOkay: 2,
     description:
-      "섬유질과 비타민이 풍부해 소화에 도움, 씨는 반드시 제거 후 급여여.",
+      "섬유질과 비타민이 풍부해 소화에 도움, 씨는 반드시 제거 후 급여.",
     category: 1,
   },
   {
